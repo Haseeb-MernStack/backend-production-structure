@@ -1,0 +1,17 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on "Keep a Changelog" and follows Semantic Versioning.
+
+## [Unreleased]
+
+### Added
+
+- Initial project scaffold and folder structure.
+
+## [1.0.0] - 2026-02-03
+
+### Added
+
+- Initial stable release: basic Express app layout (controllers, routes, services, models, middlewares).

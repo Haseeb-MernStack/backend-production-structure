@@ -1,0 +1,51 @@
+Thank you for your interest in contributing to this project! This document describes the recommended workflow and standards for contributions to a production-quality Express backend.
+
+1. Report issues
+
+- Search existing issues before opening a new one.
+- Provide reproducible steps, expected vs actual behavior, and relevant logs.
+
+2. Branching and work flow
+
+- Use feature branches from `main` (or `master`): `feature/short-description`, `fix/short-description`, `chore/short-description`.
+- Keep branches focused and small.
+
+3. Commits and PRs
+
+- Use clear commit messages. Prefer Conventional Commits format, e.g., `feat(api): add user list endpoint` or `fix(auth): handle token expiry`.
+- Open a PR against `main` with a descriptive title and summary of changes.
+- Link related issues in the PR description and include testing steps.
+
+4. Code style and linting
+
+- Follow the project's ESLint and Prettier rules (add them if missing).
+- Run the linter and formatter locally before pushing: `npm run lint` and `npm run format` (or the appropriate scripts).
+
+5. Tests
+
+- Add unit and integration tests for new features and bug fixes.
+- Run tests locally: `npm test`.
+- CI must pass before merging.
+
+6. Updating docs and changelog
+
+- Update `README.md` or other docs for any public API or behavior changes.
+- Add a short entry to `CHANGELOG` under `Unreleased` for notable changes.
+
+7. Review process
+
+- At least one approving review is required before merging (project may require more for sensitive areas).
+- Address review comments with follow-up commits; keep the PR branch updated with `main`.
+
+8. Security and sensitive data
+
+- Do not include secrets or credentials in commits. Use `.env` (not committed) and environment-based config.
+- Report security issues privately to the maintainers (maintainer@example.com).
+
+9. CI / CD
+
+- Ensure CI is configured to run tests and linters on PRs. Merge only when CI succeeds.
+
+10. Thank you
+
+We appreciate contributions of all sizes. If you'd like help getting started, open an issue or contact the maintainers.
